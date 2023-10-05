@@ -4,17 +4,16 @@
 - [ ] noise_utils
 - [ ] learned_simulater and model_demo
 - [ ] graph_network
-- [ ] connectivity_utils
-    Computes the connectivity of the graph using scikit-learn's nearest neighbour module
-    Scope of Improvement - 
-    - [ ] leaf_size, metric in KD-Tree - Optimizing Runtime over Accuracy
-    - [ ] Verify correct mapping of senders and recievers
-    - [ ] Better list operations in batch implementation
-    - [ ] Remove self_edges in pyfunc implementation
-    - [ ] Improve eager execution using pyfunc
-
-For GPU environment,
-- [ ] Use tensorflow-gpu over tensorflow
+- [ ] connectivity_utils- Computes the connectivity of the graph using scikit-learn's nearest neighbour module <br>
+    Scope of Improvement (Optimizing Runtime over Accuracy) - 
+    - [ ] Altering leaf_size, metric in KD-Tree 
+    - [ ] Removing self_edges in pyfunc implementation
+    - [ ] Testing whether batch implementation improves the code or not
+<br>
+    No changes - Eager execution (pyfunc)
+<br>
+Dataset Edits
+- [ ] Scaling dataset-values for radius measure
 
 # Optional
 Improve Code Readability
