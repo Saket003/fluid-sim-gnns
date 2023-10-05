@@ -1,3 +1,25 @@
+# Codes Optimized
+[ ] train
+[ ] reading_utils
+[ ] noise_utils
+[ ] learned_simulater and model_demo
+[ ] graph_network
+[ ] connectivity_utils
+    Computes the connectivity of the graph using scikit-learn's nearest neighbour module
+    Scope of Improvement - 
+    [ ] leaf_size, metric in KD-Tree - Optimizing Runtime over Accuracy
+    [ ] Verify correct mapping of senders and recievers
+    [ ] Better list operations in batch implementation
+    [ ] Remove self_edges in pyfunc implementation
+    [ ] Improve eager execution using pyfunc
+
+For GPU environment,
+[ ] Use tensorflow-gpu over tensorflow
+
+# Optional
+Improve Code Readability
+Improve render_rollout.py
+
 # DeepMind Research
 
 This repository contains implementations and illustrative code to accompany
