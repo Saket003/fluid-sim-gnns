@@ -1,23 +1,24 @@
 # Codes Optimized
 - [ ] train
 - [ ] reading_utils
-- [ ] noise_utils
 - [ ] learned_simulater and model_demo
 - [ ] graph_network
-- [ ] connectivity_utils- Computes the connectivity of the graph using scikit-learn's nearest neighbour module <br>
-    Scope of Improvement (Optimizing Runtime over Accuracy) - 
-    - [ ] Altering leaf_size, metric in KD-Tree 
-    - [ ] Removing self_edges in pyfunc implementation
-    - [ ] Testing whether batch implementation improves the code or not
-<br>
-    No changes - Eager execution (pyfunc)
+
 <br>
 Dataset Edits
 - [ ] Scaling dataset-values for radius measure
 
+# Tested
+Scope of Improvement in connectivity_utils (Optimizing Runtime over Accuracy) - 
+- [x] Altering leaf_size, metric in KD-Tree 
+- [x] Removing self_edges in pyfunc implementation
+<br>
+No changes
+<br>
+
 # Optional
 Improve Code Readability
-Improve render_rollout.py
+Improve render_rollout.py, noise_utils.py
 
 # DeepMind Research
 

@@ -51,8 +51,7 @@ def _compute_connectivity(positions, radius, add_self_edges):
   return senders, receivers
 
 
-def _compute_connectivity_for_batch(
-    positions, n_node, radius, add_self_edges):
+def _compute_connectivity_for_batch(positions, n_node, radius, add_self_edges):
   """`compute_connectivity` for a batch of graphs.
 
   Args:
@@ -103,8 +102,7 @@ def _compute_connectivity_for_batch(
   return senders, receivers, n_edge
 
 
-def compute_connectivity_for_batch_pyfunc(
-    positions, n_node, radius, add_self_edges=True):
+def compute_connectivity_for_batch_pyfunc(positions, n_node, radius, add_self_edges=True):
   """`_compute_connectivity_for_batch` wrapped in a pyfunc."""
   partial_fn = functools.partial(
       _compute_connectivity_for_batch, add_self_edges=add_self_edges)
@@ -116,4 +114,3 @@ def compute_connectivity_for_batch_pyfunc(
   receivers.set_shape([None])
   n_edge.set_shape(n_node.get_shape())
   return senders, receivers, n_edge
-
